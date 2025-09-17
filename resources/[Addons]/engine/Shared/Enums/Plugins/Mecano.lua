@@ -1,0 +1,33 @@
+Engine["Enums"].Mecano = {
+    Events = {
+        startCustom = "mecano:StartCustom",
+        resetCustom = "mecano:ResetCustom",
+        sendBill = "mecano:sendBill",
+        requestProperties = "mecano:RequestProperties",
+        receiveProperties = "mecano:ReceiveProperties",
+        changeBillState = "mecano:ChangeBillState",
+        sendAnnouncement = "mecano:SendAnnouncement",
+        sendPersoAnnouncement = "mecano:SendPersoAnnouncement",
+        requestClean = "mecano:RequestClean",
+        receiveClean = "mecano:ReceiveClean",
+        requestRepair = "mecano:RequestRepair",
+        receiveRepair = "mecano:ReceiveRepair",
+        requestUnlockVehicle = "mecano:RequestUnlockVehicle",
+        receiveUnlockVehicle = "mecano:ReceiveUnlockVehicle",
+        requestSyncUnlockVehicle = "mecano:RequestSyncUnlockVehicle",
+        sendCustomBill = "mecano:SendCustomBill",
+        setPercentage = "mecano:SetPercentage",
+        requestPercentage = "mecano:RequestPercentage",
+        receivePercentage = "mecano:ReceivePercentage",
+        requestClothes = "mecano:RequestClothes",
+        receiveClothes = "mecano:ReceiveClothes",
+        addClothes = "mecano:AddClothes",
+        removeClothes = "mecano:RemoveClothes",
+        receiveRemoveClothes = "mecano:ReceiveRemoveClothes",
+        takeOutfit = "mecano:TakeOutfit",
+        receiveOutfit = "mecano:ReceiveTakeOutfit",
+        craftItem = "mecano:CraftItem",
+        startCraftAnimation = "mecano:StartCraftAnimation",
+        receiveCraftItem = "mecano:ReceiveCraftItem"
+    }
+}

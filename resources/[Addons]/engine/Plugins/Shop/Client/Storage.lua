@@ -1,0 +1,12 @@
+shopStorage = Shared.Storage:Register("Shop")
+
+shopStorage:Set("main_menu", RageUI.AddMenu("", "Boutique"))
+shopStorage:Set("history_menu", RageUI.AddSubMenu(shopStorage:Get("main_menu"), "", "Historique des achats"))
+shopStorage:Set("weapon_menu",RageUI.AddSubMenu(shopStorage:Get("main_menu"), "", "Armes"))
+shopStorage:Set("exclusive_weapon_menu",RageUI.AddSubMenu(shopStorage:Get("main_menu"), "", "Armes Exclusives"))
+shopStorage:Set("vehicles_menu", RageUI.AddSubMenu(shopStorage:Get("main_menu"), "", "Véhicules"))
+shopStorage:Set("limited_vehicles_menu", RageUI.AddSubMenu(shopStorage:Get("vehicles_menu"), "", "Véhicules Limités"))
+shopStorage:Set("mystery_menu", RageUI.AddSubMenu(shopStorage:Get("main_menu"), "", "Caisses Mystères"))
+shopStorage:Set("mystery_preview_menu", RageUI.AddSubMenu(shopStorage:Get("mystery_menu"), "", "Caisses Mystères"))
+shopStorage:Set("packs_menu", RageUI.AddSubMenu(shopStorage:Get("main_menu"), "", "Packs"))
+shopStorage:Set("subscriptions_menu", RageUI.AddSubMenu(shopStorage:Get("main_menu"), "", "Abonnement"))

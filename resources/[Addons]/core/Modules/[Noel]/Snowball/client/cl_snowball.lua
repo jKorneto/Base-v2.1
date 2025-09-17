@@ -1,0 +1,54 @@
+-- local function CanPickupSnowBall()
+--     local PlayerPed = PlayerPedId()
+--     return not IsPedInAnyVehicle(PlayerPed, true)
+--         and not IsPlayerFreeAiming(PlayerPed)
+--         and not IsPedSwimming(PlayerPed)
+--         and not IsPedSwimmingUnderWater(PlayerPed)
+--         and not IsPedRagdoll(PlayerPed)
+--         and not IsPedFalling(PlayerPed)
+--         and not IsPedRunning(PlayerPed)
+--         and not IsPedSprinting(PlayerPed)
+--         and GetInteriorFromEntity(PlayerPed) == 0
+--         and not IsPedShooting(PlayerPed)
+--         and not IsPedUsingAnyScenario(PlayerPed)
+--         and not IsPedInCover(PlayerPed, 0)
+-- end
+
+-- Shared:RegisterKeyMapping("iZeyy:Noel:PickUpSnowball", { label = "collect_snow_ball" }, "G", function()
+--     if CanPickupSnowBall() then
+--         TriggerServerEvent("iZeyy:Noel:Snowball")
+--     end
+-- end)
+
+-- CreateThread(function()
+--     while true do
+--         if IsNextWeatherType("XMAS") then
+--             if not LoadedFX then
+--                 N_0xc54a08c85ae4d410(3.0)
+--                 SetForceVehicleTrails(true)
+--                 SetForcePedFootstepsTracks(true)
+--                 RequestScriptAudioBank("ICE_FOOTSTEPS", false)
+--                 RequestScriptAudioBank("SNOW_FOOTSTEPS", false)
+--                 LoadedFX = true
+--             end
+--         else
+--             if LoadedFX then
+--                 N_0xc54a08c85ae4d410(0.0)
+--                 ReleaseNamedScriptAudioBank("ICE_FOOTSTEPS")
+--                 ReleaseNamedScriptAudioBank("SNOW_FOOTSTEPS")
+--                 SetForceVehicleTrails(false)
+--                 SetForcePedFootstepsTracks(false)
+--                 LoadedFX = false
+--             end
+--         end
+--         Wait(1000)
+--     end
+-- end)
+
+-- RegisterNetEvent("iZeyy:Noel:MakeAnim", function()
+--     RequestAnimDict("anim@mp_snowball")
+--     while not HasAnimDictLoaded("anim@mp_snowball") do
+--         Wait(0)
+--     end
+--     TaskPlayAnim(PlayerPedId(), "anim@mp_snowball", "pickup_snowball", 1.0, -1.0, 5000, 0, 1, true, true, true)
+-- end)

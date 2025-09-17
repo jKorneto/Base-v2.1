@@ -1,0 +1,5 @@
+MOD_HUD:onReady(function()
+    AddEventHandler('iZeyy:Hud:StateStatus', function(bool)
+        MOD_HUD.class:SetHudVisible(bool)
+    end)
+end)

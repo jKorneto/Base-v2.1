@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
+.safezone-container{
+    position:fixed;
+    top:5vh;
+    left:50%;
+    transform:translateX(-50%);
+    font-family: 'Outfit';
+    font-style: normal;
+    font-weight: 400;
+    color:white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    display: none;
+    transition: 0.5s;
+}
+
+.safezone-container.active{
+    top:4vh;
+}
+
+.safezone-item{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.safezone-container img{
+    height: 7vh;
+}
+
+.img-container{
+    padding:2vh;
+    width: fit-content;
+}
+
+.icon-green{
+    display:none;
+}
+
+
+.icon-red{
+    display:none;
+}
+
+#safezone-desc{
+    font-size: 1.6vh;
+}
+
+.green #safezone-desc{
+    text-shadow: 0px 0px 10px #000000;
+}
+
+.red #safezone-desc{
+    text-shadow: 0px 0px 10px #000000;
+}
+
+.green .icon-green{
+    display:block;
+}
+
+.green .icon-red{
+    display:none;
+}
+
+.red .icon-red{
+    display:block;
+}
+.red .icon-green{
+    display:none;
+}
+
+@-webkit-keyframes fade-in {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes fade-in {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes fade-out {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+@keyframes fade-out {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+.fade-in {
+    animation: fade-in 0.5s forwards;
+}
+
+.fade-out {
+    animation: fade-out 0.5s forwards;
+}

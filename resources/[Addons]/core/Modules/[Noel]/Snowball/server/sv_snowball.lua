@@ -1,0 +1,18 @@
+-- RegisterNetEvent("iZeyy:Noel:Snowball", function()
+--     local xPlayer = ESX.GetPlayerFromId(source)
+--     if (xPlayer) then
+--         local weaponItem = xPlayer.getInventoryItem("weapon_snowball")
+--         local currentWeaponCount = weaponItem and weaponItem.quantity or 0
+        
+--         if currentWeaponCount < 1 then
+--             if xPlayer.canCarryItem("weapon_snowball", 1) then
+--                 TriggerClientEvent("iZeyy:Noel:MakeAnim", xPlayer.source)
+--                 xPlayer.addWeapon("WEAPON_SNOWBALL", 1)
+--             else
+--                 xPlayer.showNotification("Vous n'avez pas de place sur vous")
+--             end
+--         else
+--             xPlayer.showNotification("Vous ne pouvez pas prendre plus de boule de neige sur vous")
+--         end
+--     end
+-- end)

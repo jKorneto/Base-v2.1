@@ -1,0 +1,15 @@
+Shared.Events:OnNet(Engine["Enums"].Vehicles.Events.RequestProperties, function(plate, networkId)
+    Shared.Vehicle:GetByNetworkId(networkId, function(vehicle)
+        Shared.Events:Protected(Engine["Enums"].Vehicles.Events.ReceiveProperties, plate, vehicle and Game.Vehicle:GetProperties(vehicle) or {})
+    end)
+end)
+
+Shared.Events:OnNet(Engine["Enums"].Vehicles.Events.SetProperties, function(plate, networkId, properties)
+    Shared.Vehicle:GetByNetworkId(networkId, function(vehicle)
+        local props = properties
+        Game.Vehicle:RequestControl(vehicle, function()
+            Game.Vehicle:SetProperties(vehicle, props)
+            -- Shared.Events:Protected(Engine["Enums"].Vehicles.Events.ReceiveProperties, plate, vehicle and Game.Vehicle:GetProperties(vehicle) or {})
+        end)
+    end)
+end)

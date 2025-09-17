@@ -1,0 +1,66 @@
+-- CreateThread(function()
+
+--     for k, v in pairs(Config["Calender"]["Pos"]) do
+--         local GiftZone = Game.Zone("GiftZone")
+
+--         GiftZone:Start(function()
+--             GiftZone:SetTimer(1000)
+--             GiftZone:SetCoords(v)
+
+--             GiftZone:IsPlayerInRadius(8.0, function()
+--                 GiftZone:SetTimer(0)
+--                 ESX.ShowHelpNotification("Appuyez sur ~INPUT_CONTEXT~ pour prendre votre cadeau")
+--                 GiftZone:Marker()
+
+--                 GiftZone:IsPlayerInRadius(8.0, function()
+--                     GiftZone:KeyPressed("E", function()
+--                         TriggerServerEvent("iZeyy:Noel:Gift")
+--                     end)
+--                 end, false, false)
+--             end, false, false)
+--         end)
+--     end
+
+--     local blip = AddBlipForCoord(Config["Calender"]["BlipsPos"])
+--     SetBlipSprite(blip, 781)
+--     SetBlipScale(blip, 0.5)
+--     SetBlipColour(blip, 5)
+--     SetBlipDisplay(blip, 4)
+--     SetBlipAsShortRange(blip, true)
+--     BeginTextCommandSetBlipName("STRING")
+--     AddTextComponentString("Calendrier de l'Avant")
+--     EndTextCommandSetBlipName(blip)
+
+
+-- end)
+
+-- RegisterNetEvent("iZeyy:Noel:StartAnim", function(Gift)
+--     ShowCam(Gift)
+-- end)
+
+-- function ShowCam(Gift)
+--     CreateThread(function()
+--         DisplayRadar(false)
+--         exports["uicalender"]:showGiftUI(Gift)
+--         TriggerEvent('iZeyy:Hud:StateStatus', false)
+--         TriggerEvent("iZeyy::Hud::StateHud", false)
+--         local playerPed = PlayerPedId()
+--         local cam = CreateCam("DEFAULT_SCRIPTED_CAMERA", true)
+--         SetCamCoord(cam, 186.24, -992.38, 45.48)
+--         PointCamAtEntity(cam, playerPed, 0.0, 0.0, 0.0, true)
+--         SetCamActive(cam, true)
+--         RenderScriptCams(true, true, 2000, false, false)
+--         FreezeEntityPosition(playerPed, true)
+--         SetEntityVisible(playerPed, false)
+--         SetTimeout(30000, function()
+--             RenderScriptCams(false, true, 2000, false, false)
+--             DestroyCam(cam, false)
+--             DisplayRadar(true)
+--             TriggerEvent('iZeyy:Hud:StateStatus', true)
+--             TriggerEvent("iZeyy::Hud::StateHud", true)
+--             FreezeEntityPosition(playerPed, false)
+--             SetEntityVisible(playerPed, true)
+--             TriggerServerEvent("iZeyy:Noel:Reward")
+--         end)
+--     end)
+-- end

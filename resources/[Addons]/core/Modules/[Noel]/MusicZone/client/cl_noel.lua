@@ -1,0 +1,14 @@
+-- RegisterNetEvent("iZeyy:Noel:StartAmbiance", function(UrlMusic, AmbianceData)
+--     local MusicStarted = false
+--     for _, Ambiance in ipairs(AmbianceData) do
+--         local MusicId = tostring(Ambiance.MusicId)
+--         exports["xsound"]:PlayUrlPos(MusicId, UrlMusic, 0.01, Ambiance.MusicPos, true)
+--         exports["xsound"]:Distance(MusicId, Ambiance.MusicRadius)
+--         MusicStarted = true
+--     end
+--     if (MusicStarted) then
+--         Shared.Log:Success("Noel ambiance started")
+--     else
+--         Shared.Log:Error("With Noel ambiance")
+--     end
+-- end)

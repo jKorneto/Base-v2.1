@@ -1,0 +1,145 @@
+@import"https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap";
+
+html,
+body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: Outfit, sans-serif;
+    font-weight: 400
+}
+
+.iZeyy-StatusOneLife-Container {
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    pointer-events: none
+}
+
+.iZeyy-StatusOneLife-Background {
+    position: relative;
+    background-image: url(/assets/image-C6VpLQVQ.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center
+}
+
+.iZeyy-StatusOneLife-Hunger {
+    position: relative;
+    right: 32vw;
+    top: 23vw;
+    width: 45px;
+    height: 45px;
+    border: 2px solid #0089c9;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-top: 10px;
+    background-color: #00000038;
+    box-shadow: 0 0 10px #0e0e0ead;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 2
+}
+
+.iZeyy-StatusOneLife-Thirst {
+    position: relative;
+    right: 32vw;
+    top: 23vw;
+    width: 45px;
+    height: 45px;
+    border: 2px solid #ffffff;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-top: 10px;
+    background-color: #00000038;
+    box-shadow: 0 0 10px #0e0e0ead;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 2
+}
+
+.iZeyy-StatusOneLife-HungerFill {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background: linear-gradient(to right bottom, #0089c996, #1c445796 60%);
+    z-index: -1
+}
+
+.iZeyy-StatusOneLife-ThirstFill {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background: linear-gradient(to right bottom, #ffffff96, #79797996 60%);
+    z-index: -1
+}
+
+.iZeyy-StatusOneLife-Micro {
+    position: relative;
+    right: 32.5vw;
+    bottom: -21.2vw;
+    width: 200px;
+    height: 100px;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+    font-size: 1.4em
+}
+
+.iZeyy-StatusOneLife-Micro .iZeyy-StatusOneLife-mic-circle {
+    position: relative;
+    left: 25px;
+    top: 37px;
+    width: 7px;
+    height: 7px;
+    margin-top: 3px;
+    border-radius: 50%;
+    background-color: #093447;
+    border: 2px solid #06183067
+}
+
+.iZeyy-StatusOneLife-mic-circle.active {
+    background-color: #0089c9
+}
+
+.iZeyy-StatusOneLife-Micro {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    gap: 2px
+}
+
+.iZeyy-StatusOneLife-fade-enter {
+    opacity: 0
+}
+
+.iZeyy-StatusOneLife-fade-enter-active {
+    opacity: 1;
+    transition: opacity .3s ease-in
+}
+
+.iZeyy-StatusOneLife-fade-exit {
+    opacity: 1
+}
+
+.iZeyy-StatusOneLife-fade-exit-active {
+    opacity: 0;
+    transition: opacity .3s ease-in
+}

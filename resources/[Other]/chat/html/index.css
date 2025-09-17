@@ -1,0 +1,165 @@
+@import url(https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap);
+
+.color-0 {
+	color: #ffffff;
+}
+
+.color-1 {
+	color: #ff4444;
+}
+
+.color-2 {
+	color: #99cc00;
+}
+
+.color-3 {
+	color: #ffbb33;
+}
+
+.color-4 {
+	color: #0099cc;
+}
+
+.color-5 {
+	color: #33b5e5;
+}
+
+.color-6 {
+	color: #aa66cc;
+}
+
+.color-8 {
+	color: #cc0000;
+}
+
+.color-9 {
+	color: #cc0068;
+}
+
+* {
+	font-family: 'Outfit', sans-serif;
+    font-weight: 400;
+	margin: 0;
+	padding: 0;
+}
+
+.no-grow {
+	flex-grow: 0;
+}
+
+em {
+	font-style: normal;
+}
+
+#app {
+	font-family: 'Outfit', sans-serif;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	color: white;
+}
+
+.chat-window {
+	position: absolute;
+	top: 3.5%;
+	left: 0.0%;
+	width: 36%;
+	height: 22%;
+	max-width: 1000px;
+	background-color: rgba(0, 0, 0, 0.0);
+	-webkit-animation-duration: 2s;
+}
+
+.chat-messages {
+	position: relative;
+	height: 95%;
+	font-size: 1.8vh;
+	margin: 1%;
+	overflow-x: hidden;
+	overflow-y: hidden;
+}
+
+.chat-input {
+	font-size: 1.65vh;
+	position: absolute;
+	top: 26.8%;
+	left: 0.8%;
+	width: 36%;
+	max-width: 1000px;
+	box-sizing: border-box;
+}
+
+.prefix {
+	font-size: 1.8vh;
+	position: absolute;
+	margin-top: 0.70%;
+	left: 1.208%;
+}
+
+textarea {
+	font-size: 1.65vh;
+	display: block;
+	box-sizing: border-box;
+	padding: 1%;
+	padding-left: 4.5%;
+	color: white;
+	background: linear-gradient(90deg, rgba(12, 16, 21, .25) 0%, rgba(12, 16, 21, .10) 100%);
+	width: 90%;
+	border-width: 0;
+	height: 3.15%;
+	overflow: hidden;
+	text-overflow: ellipsis;
+    border-top-right-radius: 3px;
+    border-top-left-radius: 3px;
+}
+
+textarea:focus,
+input:focus {
+	outline: none;
+}
+
+.msg {
+	margin-bottom: 0.28%;
+}
+
+.twitter {
+	height: 10%;
+	width: 90%;
+	background: #ffbb33;
+	border-radius: 5px;
+	color: #0000;
+}
+
+.multiline {
+	margin-left: 4%;
+	text-indent: -1.2rem;
+	white-space: pre-line;
+}
+
+.suggestions {
+	list-style-type: none;
+	padding: 1%;
+	padding-left: 1.4%;
+	font-size: 1.65vh;
+	box-sizing: border-box;
+	color: rgba(255, 255, 255, 0.87);
+	background: linear-gradient(90deg, rgba(12, 16, 21, .25) 0%, rgba(12, 16, 21, .10) 100%);
+    width: 90%;
+    border-bottom-right-radius: 3px;
+    border-bottom-left-radius: 3px;
+}
+
+.help {
+	color: #b0bbbd;
+}
+
+.disabled {
+	color: #b0bbbd;
+}
+
+.suggestion {
+	margin-bottom: 0.5%;
+}
+
+.hidden {
+	display: none;
+}

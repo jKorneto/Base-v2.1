@@ -1,0 +1,79 @@
+@import"https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap";
+
+html,
+body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: Outfit;
+    font-style: normal;
+    font-weight: 100 900;
+    -webkit-user-select: none;
+    user-select: none;
+    z-index: 99999999999999999999
+}
+
+.iZeyy-OneLife-ResponsibilityClause-Background {
+    position: relative;
+    background: radial-gradient(#0b121b, #070b11);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    width: 100vw;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center
+}
+
+.iZeyy-OneLife-ResponsibilityClause-Logo {
+    position: relative;
+    bottom: 50px;
+    width: 13vw
+}
+
+.iZeyy-OneLife-ResponsibilityClause-Title {
+    position: relative;
+    bottom: 60px;
+    color: #fff;
+    font-weight: 500;
+    font-size: 24px
+}
+
+.iZeyy-OneLife-ResponsibilityClause-SubContent {
+    position: relative;
+    bottom: 100px;
+    width: 780px;
+    height: 200px;
+    font-family: Outfit;
+    font-weight: 200;
+    color: #fff;
+    font-size: 14px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    opacity: .5
+}
+
+.iZeyy-OneLife-ResponsibilityClause-ProgressContainer {
+    position: relative;
+    bottom: 130px;
+    width: 44%;
+    height: 6px;
+    background-color: #0a2542;
+    border-radius: 5px;
+    margin-top: 10px;
+    overflow: hidden
+}
+
+.iZeyy-OneLife-ResponsibilityClause-ProgressBar {
+    height: 100%;
+    background-color: #2076d4;
+    transition: width .1s ease
+}

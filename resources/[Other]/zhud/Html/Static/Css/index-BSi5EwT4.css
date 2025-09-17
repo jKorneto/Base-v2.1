@@ -1,0 +1,139 @@
+@import"https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap";
+
+html,
+body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: Outfit;
+    font-style: normal;
+    font-weight: 100 900;
+    -webkit-user-select: none;
+    user-select: none
+}
+
+@keyframes slideInFromRight {
+    0% {
+        transform: translate(100%);
+        opacity: 0
+    }
+
+    to {
+        transform: translate(0);
+        opacity: 1
+    }
+}
+
+@keyframes slideOutToRight {
+    0% {
+        transform: translate(0);
+        opacity: 1
+    }
+
+    to {
+        transform: translate(100%);
+        opacity: 0
+    }
+}
+
+.iZeyy-OneLifeHud-Contenair {
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    pointer-events: none
+}
+
+.iZeyy-OneLifeHud-Background {
+    animation-fill-mode: forwards
+}
+
+.iZeyy-OneLifeHud-Background.enter {
+    animation: slideInFromRight .5s ease-out
+}
+
+.iZeyy-OneLifeHud-Background.exit {
+    animation: slideOutToRight .5s ease-in
+}
+
+.iZeyy-OneLifeHud-Background {
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    width: 100vw;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center
+}
+
+.iZeyy-OneLifeHud-Background::after  {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to right top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0) 60%, rgba(0, 0, 0, 0.5));
+    opacity: 0.5;
+    z-index: 1;
+}
+
+.iZeyy-OneLifeHud-Logo img {
+    position: relative;
+    bottom: 21vw;
+    left: 46vw;
+    height: 100px
+}
+
+.iZeyy-OneLifeHud-Line {
+    position: relative;
+    bottom: 24.5vw;
+    left: 43.5vw;
+    height: 35px;
+    width: 2px;
+    background-color: #fff;
+    opacity: .8
+}
+
+.iZeyy-OneLifeHud-DateTime {
+    position: relative;
+    bottom: 27.65vw;
+    left: 41vw;
+    text-align: center;
+    color: #fff;
+    padding: 0
+}
+
+.iZeyy-OneLifeHud-Time {
+    font-size: 23px;
+    font-weight: 500
+}
+
+.iZeyy-OneLifeHud-Date {
+    position: relative;
+    font-size: 10px;
+    font-weight: 300;
+    opacity: .8;
+    margin-top: -24px
+}
+
+.iZeyy-OneLifeHud-Players {
+    position: relative;
+    bottom: 27vw;
+    left: 45.3vw;
+    color: #fff
+}
+
+.iZeyy-OneLifeHud-Players .fa-user {
+    margin-right: 5px;
+    color: #fff
+}

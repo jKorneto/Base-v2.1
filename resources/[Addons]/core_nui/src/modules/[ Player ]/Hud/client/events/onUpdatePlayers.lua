@@ -1,0 +1,6 @@
+MOD_HUD:onReady(function() 
+    RegisterNetEvent('iZeyy::Hud::UpdatePlayers')
+    AddEventHandler('iZeyy::Hud::UpdatePlayers', function(int)
+        MOD_HUD.class:UpdatePlayersConnected(int)
+    end)
+end)

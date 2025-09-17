@@ -1,0 +1,5 @@
+MOD_HUD:onReady(function()
+    AddEventHandler('OneLife:Hud:SetHudMicStatus', function(bool)
+        MOD_HUD.class:SetMicStatus(bool)
+    end)
+end)

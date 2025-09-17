@@ -1,0 +1,18 @@
+clothesStorage = Shared.Storage:Register("ClothesShop")
+
+clothesStorage:Set("main_menu", RageUI.AddMenu("", "Boutique de vêtements"))
+clothesStorage:Set("shop_menu", RageUI.AddSubMenu(clothesStorage:Get("main_menu"), "", "Boutique de vêtements"))
+clothesStorage:Set("underwear_menu", RageUI.AddSubMenu(clothesStorage:Get("main_menu"), "", "Sous-vêtements"))
+clothesStorage:Set("saved_outfits_menu", RageUI.AddSubMenu(clothesStorage:Get("main_menu"), "", "Vos tenues sauvegardées"))
+
+clothesStorage:Set("hat_menu", RageUI.AddSubMenu(clothesStorage:Get("shop_menu"), "", "Chapeau"))
+clothesStorage:Set("earring_menu", RageUI.AddSubMenu(clothesStorage:Get("shop_menu"), "", "Accessoires d'oreille"))
+clothesStorage:Set("glasses_menu", RageUI.AddSubMenu(clothesStorage:Get("shop_menu"), "", "Lunettes"))
+clothesStorage:Set("torso_menu", RageUI.AddSubMenu(clothesStorage:Get("shop_menu"), "", "Haut"))
+clothesStorage:Set("accessories_menu", RageUI.AddSubMenu(clothesStorage:Get("shop_menu"), "", "Accessoires"))
+clothesStorage:Set("bags_menu", RageUI.AddSubMenu(clothesStorage:Get("shop_menu"), "", "Sac"))
+clothesStorage:Set("watches_menu", RageUI.AddSubMenu(clothesStorage:Get("shop_menu"), "", "Montres"))
+clothesStorage:Set("bracelets_menu", RageUI.AddSubMenu(clothesStorage:Get("shop_menu"), "", "Bracelets"))
+clothesStorage:Set("pants_menu", RageUI.AddSubMenu(clothesStorage:Get("shop_menu"), "", "Bas"))
+clothesStorage:Set("shoes_menu", RageUI.AddSubMenu(clothesStorage:Get("shop_menu"), "", "Chaussures"))
+clothesStorage:Set("mask_menu", RageUI.AddSubMenu(clothesStorage:Get("shop_menu"), "", "Masques"))
